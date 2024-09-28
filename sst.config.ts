@@ -11,9 +11,11 @@ export default $config({
   async run() {
     await import("./infra/storage");
     const api = await import("./infra/api");
+    const nuxt = await import("./infra/nuxt");
 
     return {
       api: api.myApi.url,
+      nuxt: nuxt.nuxt.url
     };
   },
 });
