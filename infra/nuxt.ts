@@ -1,6 +1,5 @@
 export const nuxt = new sst.aws.Nuxt("NuxtApp", {
-    buildCommand: "npm run generate",
-    // domain: "homestep.com.au",
+    // domain: "domain.com",
     path: "packages/nuxt",
     link: [],
     environment: {
