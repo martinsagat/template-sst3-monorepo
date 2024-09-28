@@ -1,8 +1,15 @@
 {
-  "dependencies": {
-    "sst": "3.1.46"
-  },
+  "name": "monorepo-template",
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {},
   "devDependencies": {
-    "@types/aws-lambda": "8.10.145"
+    "@tsconfig/node20": "^20.1.4",
+    "typescript": "5.6.2"
+  },
+  "dependencies": {
+    "sst": "^3"
   }
 }
